@@ -1,12 +1,13 @@
 
 :root {
-    --basic-white: #FFFFFF;
+    --basic-white: #ffffff;
     --basic-gray: #b2b2b2;
     --main-title-color: #202020;
     --secondary-title-color: #000000;
-    --main-text-color: #4F4F44;
+    --main-text-color: #4f4f4f;
     --secondary-text-color: #c2c2c2;
     --button-color: #5528FF;
+    --footer-bg-color: #f7f7f7;
 }
 
 
@@ -157,4 +158,55 @@ body {
     line-height: 1.5;
     font-weight: 400;
     color: var(--basic-gray);
+}
+
+.clients__list {
+    display: grid;
+    grid-template: repeat(2, 1fr) /  repeat(4, 25%);
+    grid-row-gap: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team__list {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-row-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.team__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team__img {
+    margin-right: 20px;
+}
+
+.team__box {
+    flex-basis: calc(100% - 100px);
+}
+
+.team__name {
+    font-size: 28px;
+    color: var(--main-title-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.team__post {
+    font-size: 14px;
+    color: var(--basic-gray);
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--footer-bg-color);
 }
